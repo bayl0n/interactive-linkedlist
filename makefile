@@ -1,5 +1,6 @@
 CC = gcc
 CFLAGS = -Wall -Werror
+DEP = utils.c
 
-main.out: main.c
-	$(CC) $(CFLAGS) -o main.out main.c -lm
+main.out: $(DEP) main.c
+	$(CC) $(CFLAGS) -o main.out $(DEP) main.c -lm

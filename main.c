@@ -1,3 +1,6 @@
+// HEADERS
+#include "utils.h"
+
 // LIBRARIES
 #include <math.h>
 #include <stdio.h>
@@ -6,6 +9,8 @@
 
 // MAIN FILE
 int main() {
-  printf("Placeholder\n");
+  char a = readChar("Enter a char>");
+
+  printf("%c is the char that you entered\n", a);
   return 0;
 }
