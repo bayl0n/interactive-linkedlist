@@ -1,4 +1,5 @@
 // HEADERS
+#include "menu.h"
 #include "utils.h"
 
 // LIBRARIES
@@ -9,8 +10,6 @@
 
 // MAIN FILE
 int main() {
-  char a = readChar("Enter a char>");
-
-  printf("%c is the char that you entered\n", a);
+  menu_help();
   return 0;
 }
