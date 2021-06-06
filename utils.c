@@ -1,7 +1,8 @@
 #include "utils.h"
 
-#include <stdio.h>  /* printf, scanf */
+#include <stdio.h>  /* printf, scanf, getchar */
 #include <stdlib.h> /* malloc */
+#include <string.h> /* strlen */
 
 #include "vars.h" /* MAX_BUFFER_SIZE */
 
@@ -12,6 +13,7 @@ char readChar(char s[]) {
   char c;
   printf("%s", s);
   scanf("%c", &c);
+  getchar();
 
   return c;
 }
@@ -24,6 +26,9 @@ char* readString(char s[]) {
   printf("%s", s);
   scanf("%s", newString);
 
+  while (getchar() != '\n')
+    ;
+  newString[strlen(newString)] = '\0';
   return newString;
 }
 

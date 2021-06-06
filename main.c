@@ -10,6 +10,6 @@
 
 // MAIN FILE
 int main() {
-  menu_help();
+  menu();
   return 0;
 }
