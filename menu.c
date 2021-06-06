@@ -8,7 +8,7 @@ void menu() {}
 
 void menu_help() {
   printf("Menu Options\n");
-  printf("e = do something\n");
-  printf("d = do something else\n");
-  printf("r = do something yet again\n");
+  printf("a = Add a node\n");
+  printf("d = Delete a node\n");
+  printf("p = Print list\n");
 }
