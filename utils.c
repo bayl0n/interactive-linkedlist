@@ -13,7 +13,8 @@ char readChar(char s[]) {
   char c;
   printf("%s", s);
   scanf("%c", &c);
-  getchar();
+  while (getchar() != '\n')
+    ;
 
   return c;
 }
@@ -39,6 +40,8 @@ int readInt(char s[]) {
   int i;
   printf("%s", s);
   scanf("%d", &i);
+  while (getchar() != '\n')
+    ;
 
   return i;
 }
