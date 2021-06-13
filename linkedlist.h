@@ -8,5 +8,6 @@ typedef struct Node {
 
 void insert_first(Node_t**, int);
 void display_list(Node_t*);
+void reverse_list(Node_t**);
 
 #endif

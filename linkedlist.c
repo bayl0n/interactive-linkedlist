@@ -18,3 +18,5 @@ void display_list(Node_t* head) {
   }
   printf("\n");
 }
+
+void reverse_list(Node_t** head) {}
